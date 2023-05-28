@@ -1,5 +1,98 @@
-git init -> inicaliza repositorio
-git status -> cambios no añadidos
-.gitignore -> ignorar archivos
+git init -> inicializar el repositorio de git
 
-git add <filename> o git add .
+git status -> es para saber el estado del repositorio
+
+git add <file> -> para añadir un archivo al repositorio
+
+git add . -> añadir todos los archivos
+
+git rm --chached <fil> -> dejar de monitoriar un archivos
+
+git commit -m "creando archivo index.html" -> guardar el archivo
+
+git config --global user.email "example@gmail.com" -> configurar el correo de github
+
+git config --global user.name "cristian" -> configurar el nombre de github
+
+git config --local user.email "" -> configurar de manera local
+
+git config --local user.name "" -> configurar de manera local
+
+git log -> mostrar los commits o el historial
+
+git log --oneline -> muestra los commits resumidos en una linea
+
+git log -p -> mostrar informacion de los commits y aparte muestra las modificaciones
+
+git log --pretty="format%H" -> hash completo
+git log --pretty="format%h" -> hash abreviado
+git log --pretty="format%s" -> commit name
+git log --pretty="format%ae" -> email
+
+
+git init --bare -> guarda las modificaciones de los archivos
+
+git remote -> listar repositorios conocidos
+
+git remote add servidorlocal C:/Users/CRISTIAN/Desktop/oracle/git-github/servidor/ -> conectar con el repositorio remote
+
+git remote -v -> listar con la direccion
+(push)-> quien envia (fetch)-> adonde llega
+
+git clone /c/Users/Desktop/oracle/git-github/servidor/ proyecto -> clonar repositorio
+
+git push servidorlocal master -> enviar cambios al servidor
+
+git remote rename origin local -> renombrar conexion
+
+git pull servidorlocal master -> traer cambios de un servidor
+
+git remote add origin https://github.com/Cristian-Barajas09/alura-git.git
+
+git branch -M main -> rama donde vamos a enviar
+
+git push -u origin master -> -u: significa que cada vez que hagamos un git push siempre va a ir a origin es mejor dejar sin la u para tener un mejor control
+
+git branch -> saber en que rama estamos
+
+git branch titulo -> crear rama
+
+git checkout titulo -> cambiar de rama
+
+git checkout -b lista -> crear y moverse a la rama
+
+git merge titulo -> mesclar las ramas y crea un commit extra
+
+git rebase titulo -> mesclar las ramas
+
+git log --graph -> mostrar de manera grafica
+
+git restore <file> -> descartar cambios
+
+git restore --staged <file> -> quita el git add
+
+git revert 1e040b037dfabf404d18f908e99cd0da547f2f20 -> elimina commits
+
+git stash -> guardar trabajo en progreso
+
+git stash list -> lista de stash guardados
+
+git stash apply 0  -> aplicar modificaciones del stash
+git stash drop  -> eliminar stash
+git stash pop -> agarra la ultima modificacion y mescla y elimina el stash
+
+git checkout 0d163c1 -> mover a un viaje en el tiempo
+
+git diff 0d163c1..edc5a8c -> ver modificaciones los dos puntos es hasta donde vemos los cambios
+
+git diff -> solo se puede ver
+
+git log -n <number> -> mostrar los ultimos cambios de acorde al numero
+
+git tag -a v0.1.0 -> checkpoints estos no pueden ser modificados
+
+git tag -> ver las tags
+
+git push servidorlocal <tag>
+
+git remote -v -> ver las direcciones de los remotes
