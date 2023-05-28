@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Página web AlexCG</title>
     <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href={{ url_for('static',filename='/css/estilos.css') }}>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
 
@@ -34,7 +34,7 @@
         <section class="contenedor sobre-nosotros">
             <h2 class="titulo">Nuestro producto</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                <img src={{url_for("static",filename="img/ilustracion2.svg")}} alt="" class="imagen-about-us">
                 <div class="contenido-textos">
                     <h3><span>1</span>Los mejores productos</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
@@ -52,56 +52,56 @@
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
+                        <img src={{url_for("static",filename="img/img1.jpg")}} alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
                             <p>Nuestro trabajo</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img2.jpg" alt="">
+                        <img src={{url_for("static",filename="img/img2.jpg")}} alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
                             <p>Nuestro trabajo</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img3.jpg" alt="">
+                        <img src={{url_for("static",filename="img/img3.jpg")}} alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
                             <p>Nuestro trabajo</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
+                        <img src={{url_for("static",filename="img/img4.jpg")}} alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
                             <p>Nuestro trabajo</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img4.jpg" alt="">
+                        <img src={{url_for("static",filename="img/img5.jpg")}} alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
                             <p>Nuestro trabajo</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img5.jpg" alt="">
+                        <img src={{url_for("static",filename="img/img6.jpg")}} alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
                             <p>Nuestro trabajo</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img6.jpg" alt="">
+                        <img src={{url_for("static",filename="img/img7.jpg")}} alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
                             <p>Nuestro trabajo</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img7.jpg" alt="">
+                        <img src={{url_for("static",filename="img/img8.jpg")}} alt="">
                         <div class="hover-galeria">
                             <img src="img/icono1.png" alt="">
                             <p>Nuestro trabajo</p>
@@ -114,14 +114,14 @@
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="img/face1.jpg" alt="">
+                    <img src={{url_for("static",filename="img/face1.jpg")}} alt="">
                     <div class="contenido-texto-card">
                         <h4>Name</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/face2.jpg" alt="">
+                    <img src={{url_for("static",filename="img/face2.jpg")}} alt="">
                     <div class="contenido-texto-card">
                         <h4>Name</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
