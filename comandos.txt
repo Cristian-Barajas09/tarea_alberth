@@ -1,0 +1,5 @@
+git init -> inicaliza repositorio
+git status -> cambios no añadidos
+.gitignore -> ignorar archivos
+
+git add <filename> o git add .
